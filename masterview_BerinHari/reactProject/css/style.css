@@ -1,0 +1,32 @@
+#wrapper{
+	margin: 0 auto;
+
+}
+div input {
+    display: block;
+    width:100%;
+    background-color: yellow;
+}
+#backButton{
+   padding-left: 10%;
+}
+#heading{
+	text-align: center;
+}
+ 
+#navigation{
+ 	float:left;	
+}
+ #container {
+ 	padding-left:10%;
+ 	float:left;
+    width: 60%;
+ }
+div img{
+	width:30%;
+	height:50%;
+}
+.clear{
+    clear: both;
+}
+

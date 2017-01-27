@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dino World</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body ng-app="myApp">
+
+    <section id="container" ng-controller="containerController">
+        <!-- main container starts -->
+        <section class="bannerSection">
+            <h1>Welcome to DinoData World</h1>
+        </section>
+        <section id="subContainer" ng-class="toHide" class="col-sm-12 col-md-5 col-lg-4">
+            <!-- bootstrap for responsive web design -->
+            <div class="dinoButtons" ng-repeat="x in array">
+                <button class="btn" id="{{x}}" ng-click="clickFunction($event)">{{x}}</button>
+            </div>
+        </section>
+
+        <section id="contents" class="col-sm-12 col-md-5 col-lg-6" ng-hide="hideSection">
+            <!-- bootstrap for responsive web design -->
+            <section id="content1">
+                <h2 class="dinoName">{{dinoName | uppercase}}</h2>
+                <p class="details">Appeared:{{appeared}} Years</p>
+                <p class="details">Height:{{height}} feet</p>
+                <p class="details">Length:{{length}} feet</p>
+                <button class="moreButton" ng-hide="button1Hide" ng-click="moreFunction()">More</button>
+            </section>
+            <section id="content2" ng-hide="hideContent2">
+                <p class="details">Order:{{order}}</p>
+                <p class="details">Vanished:{{vanished}} Years</p>
+                <p class="details">Weight:{{weight}} kg</p>
+                <button class="moreButton" ng-hide="button2Hide" ng-click="lessFunction()">Less</button>
+
+            </section>
+            <button ng-click="backFunction()" class="hidden-lg-up hidden-md-up" id="backButton">Back</button>
+            <!-- responsive back button visible only for mobile view -->
+        </section>
+        <div class="clear"></div>
+
+    </section>
+    <!-- main container ends -->
+</body>
+<script src="script/library/angular.min.js"></script>
+<script src="script/library/bootstrap.min.js"></script>
+<script src="script/main.js"></script>
+<script src="script/controllers/containerController.js"></script>
+
+
+</html>

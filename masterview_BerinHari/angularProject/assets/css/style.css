@@ -1,0 +1,48 @@
+#container {
+    margin: 0 auto;
+    background-color: beige;
+}
+.btn {
+    width: 100%;
+    font-size: 26px;
+    border-radius: 12px;
+    border: 2px solid;
+   	background-color: bisque;
+    margin: 16px 0 15px 0;
+}
+#subContainer {
+    float: left;
+    padding: 0 0 20px 40px;
+}
+#contents {
+    float: left;
+    text-align: center;
+}
+.bannerSection h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 35px;
+}
+.clear {
+    clear: both;
+}
+.details {
+    font-size: 30px;
+}
+.moreButton {
+    font-size: 20px;
+    width: 106px;
+}
+.banner {
+    width: 1080px;
+    height: 200px;
+}
+.dinoName {
+    font-size: 40px;
+}
+#backButton {
+    margin-top: 20px;
+}
+.dinoButtons{
+    margin-right:20px;
+}
